@@ -3,7 +3,7 @@
 int Solution::isPower(int A) {
     if (A == 1) return true;
     for (int i=2; i<=sqrt(A); i++) {
-        int j=i;
+        int j=2;
         long long x = pow(i, j);
         while (x <= A) {
             if (x == A) return true;
